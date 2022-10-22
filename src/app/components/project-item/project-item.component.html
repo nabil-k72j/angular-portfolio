@@ -1,0 +1,19 @@
+<div class="container">
+    
+    <img src="{{ cover }}" alt="{{ text }}" class="cover" [ngStyle]="{ 'border' : border }">
+
+    <div class="links">
+        
+        <h1>{{ text }}</h1>
+
+        <section class="link-container">
+
+            <a href="{{ codeLink }}" target="_blank" class="link">.code()</a>
+
+            <a *ngIf="viewLink" href="{{ viewLink }}" target="_blank" class="link">.View()</a>
+
+        </section>
+
+    </div>
+
+</div>

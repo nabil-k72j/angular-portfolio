@@ -1,0 +1,28 @@
+section.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    padding-bottom: 10vh;
+}
+
+h1.title{
+    font-size: 250%;
+    letter-spacing: 1px;
+}
+
+
+.work-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    align-items: center;
+}
+
+
+@media screen and (max-width : 767px) { 
+    h1.title{
+        font-size: 180%;
+    }
+}

@@ -1,0 +1,33 @@
+div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    width: 500px;
+    height: 300px;
+    background-color: #0a0a0a;
+    border: 2px solid #0a0a0a;
+}
+
+img.cover{
+    width: 100px;
+}
+
+a.link{
+    font-size: 110%;
+    border-radius: 2px;
+    padding: 10px 10px;
+    transition-duration: 500ms;
+}
+
+a.link:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width : 767px) {
+    div.container{
+        width: 250px;
+    }
+}

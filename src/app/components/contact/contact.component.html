@@ -1,0 +1,40 @@
+<form action="https://formsubmit.co/288ed2cc2edb896d711cec20bbb08ae0" method="POST"
+      *ngIf="showContact" data-aos="fade-in" data-aos-delay="100" data-aos-duration="500">
+
+        <input type="hidden" name="_subject" value="Portfolio!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
+    <div class="container" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="2000">
+        <h1>Send me a message</h1>
+
+        <div class="inputbox">
+            <input name='First_name' id="firstName" type="text" />
+            <label for="First_name">First Name</label>
+        </div>
+
+        <div class="inputbox">
+            <input name='Last_name' id="lastName" type="text" />
+            <label for="Last_name">Last Name</label>
+        </div>
+
+        <div class="inputbox">
+            <input name='email' id="email" type="email" />
+            <label for="email">Email</label>
+        </div>
+
+        <div class="inputbox message">
+            <textarea id="message" name="message"></textarea>
+            <label for="message">Message</label>
+        </div>
+
+        <div class="btn-container">
+
+            <input class="submit" type="submit" value=".Send()">
+
+            <app-button text=".Close()" color="#dd0031" (customClick)="onCLick()"></app-button>
+
+        </div>
+
+    </div>
+</form>

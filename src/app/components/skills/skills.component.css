@@ -1,0 +1,30 @@
+section.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    padding-bottom: 10vh;
+}
+
+h1.title{
+    font-size: 250%;
+    letter-spacing: 1px;
+}
+
+div.item-container{
+    width: 100%;
+    padding: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5vh;
+}
+
+
+@media screen and (max-width : 767px) { 
+    h1.title{
+        font-size: 180%;
+    }
+}

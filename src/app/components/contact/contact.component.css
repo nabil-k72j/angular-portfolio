@@ -1,0 +1,116 @@
+form{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0fbd;
+    backdrop-filter: blur(5px);
+}
+
+div.container{
+    width: 500px;
+    min-height: 80vh;
+    border: 2px solid #dd0031;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.inputbox {
+    position: relative;
+    margin: 35px 12px;
+
+}
+
+div.inputbox label {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    transform: translateY(12px);
+    transition: all .5s ease;
+    cursor: inherit;
+}
+
+
+div.inputbox input,
+div.inputbox textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #dd0031;
+    background-color: transparent;
+    resize: none;
+    width: 25rem;
+    height: 3rem;
+    color: white;
+    cursor: inherit;
+}
+
+
+div.inputbox input:focus~label,
+div.inputbox textarea:focus~label,
+div.inputbox input:valid~label,
+div.inputbox textarea:valid~label {
+    transform: translateY(-15px);
+    opacity: 1;
+}
+div.inputbox textarea:focus~label,
+div.inputbox textarea:valid~label {
+    transform: translateY(-25px);
+}
+
+
+div.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+input.submit{
+    border: none;
+    padding: 10px 20px;
+    cursor: inherit;
+    border-radius: 2px;
+    color: white;
+    font-size: 110%;
+    transition-duration: 500ms;
+    letter-spacing: 2px;
+    background-color: #dd0031;
+}
+
+input.submit:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width : 767px) {
+    div.container{
+        width: 300px;
+        min-height: 60vh;
+        padding: 0;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    div.inputbox input,
+    div.inputbox textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #dd0031;
+    background-color: transparent;
+    resize: none;
+    width: 15rem;
+    height: 2rem;
+}
+}

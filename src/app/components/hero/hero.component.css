@@ -1,0 +1,66 @@
+div.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+    margin: auto;
+}
+
+h1.intro{
+    font-size: 200%;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+span{
+    color: #dd0031;
+    font-size: 120%;
+}
+
+.desc{
+    width: 400px;  
+    letter-spacing: 1px;
+    word-wrap: break-word;  
+    word-spacing: 2px;
+}
+
+@media screen and (max-width : 767px) {
+    .desc{
+        width: auto;
+    }
+
+    .angCover{
+        display: none;
+    }
+}
+
+@media  screen and (min-width : 767px) and (max-width : 1023px) {
+    .angCover{
+        z-index: -1;
+        top: 10vh;
+        padding-left: 20vw;
+    }
+}
+
+
+.angCover{
+    width: 400px;
+    position: absolute;
+    right: 10vw;
+    animation: pulse 8s ease-in infinite;
+    animation-delay: 500ms;
+}
+
+
+@keyframes pulse{
+    25%  {transform: scale(0.9);}
+    75%  {transform: scale(1.1);}
+  }
+
+div.media{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}

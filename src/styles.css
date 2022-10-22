@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0F0F0F;
+  color: white;
+  cursor: url('./assets/cursur.png'), auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: inherit;
+}

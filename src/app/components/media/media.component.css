@@ -1,0 +1,20 @@
+a.media-link{
+    width: 100px;
+    height: 50px;
+    border-radius: 80%;
+    border: 1px solid #000000;
+    transition-duration: 500ms;
+}
+
+/* a.media-link:hover{
+    transform: scale(1.1);
+} */
+
+img{
+    transition-duration: 500ms;
+}
+
+
+img:hover{
+    transform: scale(1.1);
+}

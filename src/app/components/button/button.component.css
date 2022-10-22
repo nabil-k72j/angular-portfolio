@@ -1,0 +1,14 @@
+button.btn{
+    border: none;
+    padding: 10px 20px;
+    cursor: inherit;
+    border-radius: 2px;
+    color: white;
+    font-size: 110%;
+    transition-duration: 500ms;
+    letter-spacing: 2px;
+}
+
+button.btn:hover{
+    transform: scale(1.1);
+}
